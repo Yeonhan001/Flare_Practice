@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -42,5 +43,23 @@ public class GameManager : MonoBehaviour
     public void StopGame()
     {
 
+    }
+
+    public BulletAgent agentPrefab;
+    private List<BulletAgent> bulletAgents = new List<BulletAgent>();
+
+    public BulletAgent GetBulletAgent()
+    {
+        foreach(var agent in bulletAgents)
+        {
+            if(agent.isActice == false)
+                return agent;
+        }
+
+        // GameObject agentObject = new GameObject("BulletObject");
+        // BulletAgent newAgent = agentObject.AddComponent<BulletAgent>();
+        BulletAgent newAgent = Instantiate(agentPrefab);
+        bulletAgents.Add(newAgent);
+        return newAgent;
     }
 }

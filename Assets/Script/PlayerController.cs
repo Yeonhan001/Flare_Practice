@@ -12,4 +12,16 @@ public class PlayerController : MonoBehaviour
         GameManager.Instance.StopGame();
         // GameManager에서 게임 스탑 호출하기
     }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            Vector3 position = Random.insideUnitSphere * 5.0f;
+
+            BulletAgent agent = GameManager.Instance.GetBulletAgent();
+            agent.transform.position = position;
+            agent.Activate();
+        }
+    }
 }
