@@ -31059,14 +31059,14 @@ MonoBehaviour:
   tabIndex: 0
   previewArea: 1
   scrollPosition: {x: 0, y: 0}
-  offsetPosition: {x: 31.625, y: 31.625}
+  offsetPosition: {x: 63.25, y: 63.25}
   color: {r: 1, g: 1, b: 1, a: 1}
   playInInspector: 0
   playInScene: 0
   resetPlayFrame: 0
   frameCounter: 0
   frameTimer: 0
-  zoom: 0.75
+  zoom: 0.5
   propertyFoldOut: 0
   resetSprites: 0
   propertyIndex: 0

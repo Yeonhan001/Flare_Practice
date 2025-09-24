@@ -375,6 +375,7 @@
 "Assets/Epic Toon FX/Scripts/ETFXLightFade.cs"
 "Assets/Epic Toon FX/Scripts/ETFXPitchRandomizer.cs"
 "Assets/Epic Toon FX/Scripts/ETFXRotation.cs"
+"Assets/NewBehaviourScript.cs"
 -langversion:9.0
 /deterministic
 /optimize+
